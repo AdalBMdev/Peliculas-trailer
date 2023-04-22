@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailers Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="Assets/img/fav-icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">
+                Movie <span>Trailers</span>
+            </a>
+            <!--Search-->
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search movie">
+                <i class='bx bx-search' id="filtro"></i>
+            </div>
+            <!--User-->
+            <a href="#" class="user" >
+                <img src="../Assets/img/user.jpg" class="user-img">
+            </a>
+            <!--navbar-->
+            <div class="navbar">
+                <a href="#home" class="nav-link nav-active">
+                    <i class='bx bx-home' ></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#popular" class="nav-link">
+                    <i class='bx bxs-hot' ></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="#movies" class="nav-link">
+                    <i class='bx bx-compass' ></i>
+                    <span class="nav-link-title">Explore</span>
+                </a>
+                <a href="../admin/loginAdmin.html" class="nav-link">
+                    <i class='bx bx-crown'></i>
+                    <span class="nav-link-title">Admin</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--Home-->
+    <section class="home container" id="home">
+
+    </section>
+    <!--Home end-->
+    <!--Popular section start-->
+    <section class="pupular container" id="popular">
+            <!--Heading-->
+        <div class="heading">
+            <h2 class="heading-title">Popular Movies</h2>
+            <!--Swiper Buttons-->
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>    
+        <!--Content Generetor Popular-->
+        <div class="popular-content swiper " >
+            <div class="swiper-wrapper" id="peliculas-container">
+               
+              </div>
+
+        </div>
+    </section>
+    <!--Popular section end-->
+
+    <!--Movies section Start-->
+    <section class="movies container" id="movies">
+    <!--Heading-->
+        <div class="heading">
+            <h2 class="heading-title">Movies and Shows</h2>
+        </div>    
+    <!--Movies Content Generator-->
+    <div class="movies-content" id="peliculas-containerG">
+       
+    </div>
+
+    </section>
+    <!--Movies section End-->
+    <!--Next page-->
+    <div class="next-page">
+        <a href="#" class="next-btn">Next Page</a>
+    </div>
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Grupo programacion web todos los derechos reservados</p>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cargarIndex.js"></script>
+
+</body>
+</html>

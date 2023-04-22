@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailers Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="Assets/img/fav-icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <!--Logo-->
+            <a href="AdminCRUD.html" class="logo">
+                Espacio <span>Administrador</span> <button id="btn">Añadir pelicula</button>
+            </a>
+            <!--User-->
+            <a href="#" class="user">
+                <img src="../Assets/img/user.jpg" class="user-img">
+            </a>
+            <!--navbar-->
+            <div class="navbar">
+                <a href="../lobby/index.html" class="nav-link nav-active">
+                    <i class='bx bx-home' ></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="AdminCRUD.html" class="nav-link">
+                    <i class='bx bx-crown'></i>
+                    <span class="nav-link-title">Admin</span>
+                </a>
+                <a href="Agregar.html" class="nav-link">
+                    <i class='bx bx-plus-circle' ></i>
+                    <span class="nav-link-title">Agregar</span>
+                </a>
+                <a href="#" class="nav-link" id="logout">
+                    <i class='bx bx-exit' ></i>
+                    <span class="nav-link-title">Cerrar Sesion</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="form-register">
+        <h4> <span class="adm"></span></h4> 
+        <form action="#" id="form-edit" autocomplete="off">
+            <input class="controls" type="text"  id="titulo" placeholder="Ingresa el Titulo">
+            <input class="controls" type="text"  id="director" placeholder="Ingresa el Director">
+            <input class="controls" type="text"  id="actores" placeholder="Ingresa los Actores">
+            <textarea class="controls" placeholder="Ingresa la Reseña" id="reseña" cols="30" rows="10"></textarea>
+            <input class="controls" type="text"  id="poster" placeholder="Ingresa la Imagen de Portada">
+            <textarea class="controls" name="trailer" placeholder="Ingresa el link del trailer" id="trailer" cols="30" rows="3"></textarea>
+            <input class="controls" type="date"  id="fecha" placeholder="Ingresa la fecha">
+            <input class="botons" id="edit" type="submit" value="Editar">
+        </form>
+        
+    </section>
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Grupo programacion web todos los derechos reservados</p>
+    </div>
+
+    <script src="../lobby/js/swiper-bundle.min.js"></script>
+    <script src="js/editar.js"></script>
+
+</body>
+</html>
